@@ -23,8 +23,8 @@ body{
 .header .hearts{
     
     position: absolute;
-    left: 1vw;
-    top: 1vw;
+    left: 10px;
+    top: 10px;
 }
 
 .header .hearts img{
@@ -34,8 +34,8 @@ body{
 .header .counter{
     
     position: absolute;
-    right: 1vw;
-    top: 1vw;
+    right: 10px;
+    top: 10px;
 }
 .header .counter h1{
 
