@@ -4,7 +4,7 @@ let word = "";
 let succses = false;
 while(!succses){
     try {
-        const res = await fetch(`https://random-word-api.vercel.app/api?words=1&length=${(Math.floor(Math.random() * 7)) + 1}`);
+        const res = await fetch(`https://random-word-api.vercel.app/api?words=1&length=${(Math.floor(Math.random() * 5)) + 3}`);
         if(!res.ok){
             throw new Error("rseponse did not succeed")
         }
@@ -29,7 +29,7 @@ async function getWord(){
     wordBox.classList.add("word-box")
     let postion = Math.floor((Math.random() * 71)) + 20;
     wordBox.style.left= `${postion}%`
-    wordBox.style.transform = `trasnlateX(${postion})`
+    wordBox.style.transform = `trasnlateX(-${postion}%)`
     let word = await genreateWord();
     word = word.charAt(0).toUpperCase() + word.substring(1);
     wordBox.innerHTML = `<h3>${word}</h3>
@@ -37,8 +37,10 @@ async function getWord(){
     return wordBox;
 }
 
-setInterval(async() => {
-    let word = await getWord();
-document.body.appendChild(word)
-},5000)
+export {getWord};
 
+setInterval(async ()=>{
+   const word= await getWord();
+   document.body.appendChild(word);
+
+},3000)
