@@ -13,7 +13,7 @@ body{
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    
+    overflow: hidden;
     background-color: rgba(84, 0, 163, 0.281);
     
 }
@@ -59,7 +59,7 @@ input{
     
     outline: none;
     border: clamp(2px,1vw,10px) solid rgba(99, 99, 99, 0.411);
-    width: 50%;
+    width: 60%;
     text-align: center;
     font-size: clamp(1.2rem,3.2vw,4rem);
     border-radius: clamp(50px,10vw,100px);
