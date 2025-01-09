@@ -82,19 +82,21 @@ input:focus{
    position: absolute;
    left: 70%;
    transform: translateX(-70%);
+   
 }
 .word-box h3{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: clamp(1rem,1.5vw,2.25rem);
+    font-size: clamp(1rem,1.5vw,2rem);
     color: white;
     font-weight: 100;
     text-align: center;
+    
 }
 
 .word-box img{
     
-    width: clamp(130px,15vw,300px);
+    width: clamp(130px,15vw,250px);
 }
