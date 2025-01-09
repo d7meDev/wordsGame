@@ -14,7 +14,7 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
-    background-color: rgba(20,38,62,255);
+    background-color: rgba(84, 0, 163, 0.295);
     
 }
 
@@ -23,7 +23,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0vw;
+    padding: 1vw;
     margin-bottom: 59vh;
 }
 
