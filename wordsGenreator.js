@@ -27,7 +27,7 @@ while(!succses){
 async function getWord(){
     const wordBox = document.createElement("div");
     wordBox.classList.add("word-box")
-    let postion = Math.floor((Math.random() * 71)) + 20;
+    let postion = Math.floor((Math.random() * 31)) + 30;
     wordBox.style.left= `${postion}%`
     wordBox.style.transform = `trasnlateX(-${postion}%)`
     let word = await genreateWord();
