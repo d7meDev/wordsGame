@@ -23,13 +23,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
     padding: 0.1vw;
     margin-bottom: 58vh;
-=======
-    padding: 0.3vw;
-    margin-bottom: 59vh;
->>>>>>> 8ac7587e07905c2ec146e0a7fab30c09edb20328
+   
 }
 
 
@@ -51,13 +47,9 @@ body{
     height: 3px;
     box-shadow: 0px 0px 10px white;
     position: relative;
-<<<<<<< HEAD
+
     margin-bottom: 9vh;
-=======
-    margin-bottom: 10vh;
->>>>>>> 8ac7587e07905c2ec146e0a7fab30c09edb20328
-    
-    
+
 }
 .input-container{
    text-align: center;
@@ -115,10 +107,6 @@ input:focus{
         top: -25vh;
     }
     to{
-<<<<<<< HEAD
         top: 68vh;
-=======
-        top: 69vh;
->>>>>>> 8ac7587e07905c2ec146e0a7fab30c09edb20328
     }
 }
