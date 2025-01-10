@@ -1,8 +1,9 @@
 const counter = document.querySelector(".header .counter h1");
 function Counter(){
+   let counterID;
    function startCounter(){
       const startTime = Date.now();
-      const counterID = setInterval(updateTime,1);
+       counterID = setInterval(updateTime,1);
       function updateTime(){
          const currentTime = new Date(Date.now() - startTime);
           

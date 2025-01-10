@@ -38,9 +38,3 @@ async function getWord(){
 }
 
 export {getWord};
-
-setInterval(async ()=>{
-   const word= await getWord();
-   document.body.appendChild(word);
-
-},3000)
