@@ -48,7 +48,7 @@ async function gameLogic() {
             let targtedWord = words[0].firstElementChild.textContent.toLowerCase();;
             if(targtedWord.startsWith(input.value.toLowerCase())){
                if(targtedWord.length === input.value.length ){
-                 input.value = "";
+                 setTimeout(()=>{input.value = "";},100)
                  words.shift().remove();
                }
             }
