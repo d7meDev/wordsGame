@@ -15,6 +15,7 @@ body{
     background-repeat: no-repeat;
     overflow: hidden;
     background-color: #130512;
+    position: relative;
     
 }
 
@@ -24,7 +25,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0.1vw;
-    margin-bottom: 58vh;
+    
    
 }
 
@@ -47,6 +48,8 @@ body{
     background-color: rgb(231, 231, 231);
     height: 3px;
     box-shadow: 0px 0px 10px white;
+    position: relative;
+    top: 60vh;
     
 
     margin-bottom: 100px;
@@ -103,58 +106,111 @@ input:focus{
 }
 
 
+@media screen and (max-width:2560px) {
+    
+    @keyframes wordBox {
+    
+        from{
+            top: -10vh;
+        }
+        to{
+            top: 67vh;
+        }
+    }
+}
+@media screen and (max-width:1440px) {
+    
+    @keyframes wordBox {
+    
+        from{
+            top: -10vh;
+        }
+        to{
+            top: 65vh;
+        }
+    }
+}
+@media screen and (max-width:1024px) {
+    
+    @keyframes wordBox {
+    
+        from{
+            top: -10vh;
+        }
+        to{
+            top: 63vh;
+        }
+    }
+}
 @media screen and (max-width:768px) {
     
     @keyframes wordBox {
     
         from{
-            top: -100px;
+            top: -10vh;
         }
         to{
-            top: 505px;
+            top: 62.3vh;
         }
     }
 
+    .header .hearts img{
+    
+        width: 8vw;
+    }
 }
 @media screen and (max-width:425px) {
     
     @keyframes wordBox {
     
         from{
-            top: -100px;
+            top: -10vh;
         }
         to{
-            top: 498px;
+            top: 62vh;
         }
+
+        
     }
 
+    .header .hearts img{
+    
+        width: 10vw;
+    }
 }
 @media screen and (max-width:375px) {
     
     @keyframes wordBox {
     
         from{
-            top: -100px;
+            top: -10vh;
         }
         to{
-            top: 498px;
+            top: 62vh;
         }
     }
 
+    .header .hearts img{
+    
+        width: 10vw;
+    }
 }
-
 @media screen and (max-width:320px) {
     
     @keyframes wordBox {
     
         from{
-            top: -100px;
+            top: -10vh;
         }
         to{
-            top: 498px;
+            top: 62vh;
         }
     }
 
+    .header .hearts img{
+    
+        width: 10vw;
+    }
 }
 
 
