@@ -31,7 +31,7 @@ async function gameLogic() {
         
         
 
-    }, 5000)
+    }, 3000)
 
   
 
