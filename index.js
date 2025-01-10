@@ -20,6 +20,7 @@ async function gameLogic() {
                 hearts--;
                 destroyHeart()
                 word.remove()
+                words.shift()
                 if(hearts == 0){
                     counterController.stopCounter();
                     words.forEach(word => word.remove())
