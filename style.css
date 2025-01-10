@@ -192,7 +192,7 @@ input:focus{
 
     .header .hearts img{
     
-        width: 10vw;
+        width: 12vw;
     }
 }
 @media screen and (max-width:320px) {
@@ -209,7 +209,7 @@ input:focus{
 
     .header .hearts img{
     
-        width: 10vw;
+        width: 12vw;
     }
 }
 
