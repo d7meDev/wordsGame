@@ -38,12 +38,14 @@ async function gameLogic() {
 
     }, 3000)
 
-    input.addEventListener('input',event =>{trackPlayerInput(event)})
+    input.addEventListener('input',event =>{
+        event.preventDefault();
+        trackPlayerInput()
+    })
              
-        function trackPlayerInput(event){
-            event.preventDefult();
+        function trackPlayerInput(){
+            
             let targtedWord = words[0].firstElementChild.textContent.toLowerCase();;
-            console.log("here")
             if(targtedWord.startsWith(input.value.toLowerCase())){
                if(targtedWord.length === input.value.length ){
                  input.value = "";
