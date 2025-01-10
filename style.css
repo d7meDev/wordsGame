@@ -102,7 +102,21 @@ input:focus{
     width: clamp(110px,15vw,200px);
 }
 
-@media screen and (max-width:320px) {
+
+@media screen and (max-width:768px) {
+    
+    @keyframes wordBox {
+    
+        from{
+            top: -100px;
+        }
+        to{
+            top: 505px;
+        }
+    }
+
+}
+@media screen and (max-width:425px) {
     
     @keyframes wordBox {
     
@@ -128,7 +142,8 @@ input:focus{
     }
 
 }
-@media screen and (max-width:425px) {
+
+@media screen and (max-width:320px) {
     
     @keyframes wordBox {
     
@@ -141,16 +156,5 @@ input:focus{
     }
 
 }
-@media screen and (max-width:768px) {
-    
-    @keyframes wordBox {
-    
-        from{
-            top: -100px;
-        }
-        to{
-            top: 505px;
-        }
-    }
 
-}
+
