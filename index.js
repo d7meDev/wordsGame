@@ -6,6 +6,7 @@ const words = [];
 let score = 0;
 let hearts = 3;
 const counterController = Counter();
+const input = document.querySelector("input");
 
 
 async function gameLogic() {
@@ -25,14 +26,34 @@ async function gameLogic() {
                     counterController.stopCounter();
                     words.forEach(word => word.remove())
                     clearInterval(wordGenreatorID)
+                    input.removeEventListener('input',trackPlayerInput)
+                
                 }
-             
+
+               
 
         })
         
-        
+        input.addEventListener('input',trackPlayerInput)
+             
+        function trackPlayerInput(){
+             
+            let targtedWord = words[0].firstElementChild.textContent.toLowerCase();;
+            
+            if(targtedWord.startsWith(input.value.toLowerCase())){
+               if(targtedWord.length === input.value.length ){
+                 input.value = "";
+                 words.shift().remove();
+               }
+            }
+            else{
+                input.value = "";
+            }
+        }
 
     }, 3000)
+
+
 
   
 
