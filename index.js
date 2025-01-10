@@ -34,12 +34,16 @@ async function gameLogic() {
 
         })
         
-        input.addEventListener('input',trackPlayerInput)
+        
+
+    }, 3000)
+
+    input.addEventListener('input',trackPlayerInput)
              
         function trackPlayerInput(){
              
             let targtedWord = words[0].firstElementChild.textContent.toLowerCase();;
-            
+            console.log("here")
             if(targtedWord.startsWith(input.value.toLowerCase())){
                if(targtedWord.length === input.value.length ){
                  input.value = "";
@@ -50,8 +54,6 @@ async function gameLogic() {
                 input.value = "";
             }
         }
-
-    }, 3000)
 
 
 
