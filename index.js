@@ -63,4 +63,5 @@ async function gameLogic() {
 
 }
 
-gameLogic();
+
+export {gameLogic};

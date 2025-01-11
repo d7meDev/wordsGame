@@ -110,6 +110,86 @@ input:focus{
     width: clamp(110px,10vw,200px);
 }
 
+.welcome-container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    z-index: 3;
+}
+.welcome-card{
+
+     background-color: rgba(255, 255, 255, 0.459);
+     width: 300px;
+     height: 400px;
+     position: absolute;
+     left:50%;
+     top: 40%;
+     transform: translate(-50%,-40%);
+     text-align: center;
+     padding: 20px;
+     border-radius: 10px;
+
+     display: flex;
+     flex-direction: column;
+     row-gap: 80px;
+     color: aliceblue;
+     border: 1px solid rgb(255, 255, 255);
+
+}
+
+.welcome-container .welcome-card h2{
+    font-size: 30px ;
+}
+.welcome-container .welcome-card p{
+    font-size: 20px ;
+}
+.welcome-container .welcome-card .btns{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    
+}
+.welcome-container .welcome-card .btns button{
+    
+    text-align: center;
+    padding: 5px 40px;
+    font-size: 25px;
+    background-color: rgba(0, 255, 0, 0.767);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    cursor: pointer;
+    
+}
+.welcome-container .welcome-card .btns .music-container{
+    
+   display: flex;
+   align-items: center;
+   column-gap: 10px;
+    
+}
+.welcome-container .welcome-card .btns .music-container input{
+    
+   transform: scale(1.5);
+    
+}
+.welcome-container .welcome-card .btns .music-container label{
+    
+  font-size: 22px;
+    
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width:2560px) {
     
