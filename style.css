@@ -130,7 +130,7 @@ input:focus{
      top: 40%;
      transform: translate(-50%,-40%);
      text-align: center;
-     padding: 20px;
+     padding: 10px;
      border-radius: 10px;
 
      display: flex;
@@ -152,7 +152,7 @@ input:focus{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0px 30px;
     
 }
 .welcome-container .welcome-card .btns button{
