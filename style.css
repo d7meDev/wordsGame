@@ -175,7 +175,7 @@ input:focus{
     
 }
 .welcome-container .welcome-card .btns .music-container input{
-    
+    border-radius: 0px;
    transform: scale(1.5);
     
 }
