@@ -170,7 +170,7 @@ input:focus{
 .welcome-container .welcome-card .btns .music-container{
     
    display: flex;
-   align-items: center;
+   align-items: baseline;
    column-gap: 10px;
     
 }
