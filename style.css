@@ -135,7 +135,7 @@ input:focus{
 
      display: flex;
      flex-direction: column;
-     row-gap: 80px;
+     row-gap: 70px;
      color: aliceblue;
      border: 1px solid rgb(255, 255, 255);
 
@@ -152,7 +152,7 @@ input:focus{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
+    padding: 0px 10px;
     
 }
 .welcome-container .welcome-card .btns button{
@@ -176,7 +176,7 @@ input:focus{
 }
 .welcome-container .welcome-card .btns .music-container input{
     border-radius: 0px;
-   transform: scale(1.5);
+   transform: scale(1.2);
     
 }
 .welcome-container .welcome-card .btns .music-container label{
