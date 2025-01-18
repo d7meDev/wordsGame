@@ -6,11 +6,16 @@ const words = [];
 let score = 0;
 let hearts = 3;
 const counterController = Counter();
-const input = document.querySelector("input");
+const inputWord = document.querySelector("input");
+
 
 
 async function gameLogic() {
     counterController.startCounter();
+    inputWord.focus()
+    document.addEventListener('click', event => {
+        inputWord.focus()
+    })
     const wordGenreatorID = setInterval(async () => {
         
         let word = await getWord();
@@ -26,7 +31,7 @@ async function gameLogic() {
                     counterController.stopCounter();
                     words.forEach(word => word.remove())
                     clearInterval(wordGenreatorID)
-                    input.removeEventListener('input',trackPlayerInput)
+                    inputWord.removeEventListener('inputWord',trackPlayerinputWord)
                 
                 }
 
@@ -38,22 +43,22 @@ async function gameLogic() {
 
     }, 3000)
 
-    input.addEventListener('input',event =>{
+    inputWord.addEventListener('inputWord',event =>{
         event.preventDefault();
-        trackPlayerInput()
+        trackPlayerinputWord()
     })
              
-        function trackPlayerInput(){
+        function trackPlayerinputWord(){
             
             let targtedWord = words[0].firstElementChild.textContent.toLowerCase();;
-            if(targtedWord.startsWith(input.value.toLowerCase())){
-               if(targtedWord.length === input.value.length ){
-                 setTimeout(()=>{input.value = "";},100)
+            if(targtedWord.startsWith(inputWord.value.toLowerCase())){
+               if(targtedWord.length === inputWord.value.length ){
+                 setTimeout(()=>{inputWord.value = "";},100)
                  words.shift().remove();
                }
             }
             else{
-                input.value = "";
+                inputWord.value = "";
             }
         }
 
