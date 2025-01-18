@@ -13,9 +13,6 @@ const inputWord = document.querySelector("input");
 async function gameLogic() {
     counterController.startCounter();
     inputWord.focus()
-    document.addEventListener('click', event => {
-        inputWord.focus()
-    })
     const wordGenreatorID = setInterval(async () => {
         
         let word = await getWord();
@@ -31,7 +28,7 @@ async function gameLogic() {
                     counterController.stopCounter();
                     words.forEach(word => word.remove())
                     clearInterval(wordGenreatorID)
-                    inputWord.removeEventListener('inputWord',trackPlayerinputWord)
+                    inputWord.removeEventListener('input',trackPlayerinputWord)
                 
                 }
 
@@ -43,7 +40,7 @@ async function gameLogic() {
 
     }, 3000)
 
-    inputWord.addEventListener('inputWord',event =>{
+    inputWord.addEventListener('input',event =>{
         event.preventDefault();
         trackPlayerinputWord()
     })
